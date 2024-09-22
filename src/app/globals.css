@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Background gradient animation */
+.bgAnimation {
+  background: linear-gradient(270deg, #f87171, #ef4444);
+  background-size: 400% 400%;
+  animation: bgMove 10s ease infinite;
+}
+
+@keyframes bgMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Typewriter effect */
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid white; /* Cursor effect */
+  white-space: nowrap;
+  width: 0;
+  animation: typing 4s steps(22) 1s forwards, blink 1s infinite step-end;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-right-color: white;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/* Image hover animation */
+.imageHover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imageHover:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+@keyframes custom-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Adjust the height of the bounce */
+  }
+}
+
+.custom-bounce {
+  animation: custom-bounce 5s ease-in-out infinite; /* Adjust the duration and easing */
+}
+
+
+.pin-card {
+  perspective: 1000px;
+}
+
+.pin-card .perspective {
+  transform-style: preserve-3d;
+  transition: transform 0.3s;
+}
+
+.pin-card:hover .perspective {
+  transform: rotateX(15deg);
+}
