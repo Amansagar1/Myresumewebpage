@@ -42,7 +42,7 @@ const Footer = () => {
           <p className="text-gray-400">Follow Me:</p>
           <div className="flex justify-center space-x-4">
             <a href="https://github.com/Amansagar1" className="text-blue-400 hover:underline">GitHub</a>
-            <a href="https://www.linkedin.com/in/kumaraman-sagar/" className="text-blue-400 hover:underline">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/kumaramansagar/" className="text-blue-400 hover:underline">LinkedIn</a>
           </div>
         </div>
         <div className="mt-6 text-center">

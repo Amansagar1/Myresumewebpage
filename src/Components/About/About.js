@@ -8,6 +8,7 @@ const About = () => {
       <div className="flex justify-center md:justify-end md:w-[30%]  w-full md:pr-10 mb-8 md:mb-0 lg:w-[40%] lg:mb-20">
         <Image
           src={myimg}
+                loading="lazy"
           alt="About"
           className="rounded-full shadow-4xl transform transition-transform duration-500 hover:scale-105 custom-bounce " // Adjust size based on screen size
         />

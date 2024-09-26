@@ -64,7 +64,7 @@ const Contact = () => {
             <p className="text-gray-300">
               <strong>LinkedIn:</strong>
               <a
-                href="https://www.linkedin.com/in/kumaraman-sagar/"
+                href="https://www.linkedin.com/in/kumaramansagar/"
                 className="text-blue-400 hover:underline"
               >
                 {" "}

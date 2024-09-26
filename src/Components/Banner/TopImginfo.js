@@ -10,7 +10,7 @@ const TopImginfo = () => {
   const secondText = "Full Stack MERN Developer";
 
   useEffect(() => {
-    const typingSpeed = 150; // Speed of text appearing
+    const typingSpeed = 160; 
 
     if (currentIndex < fullText.length) {
       const timeout = setTimeout(() => {
@@ -53,6 +53,7 @@ const TopImginfo = () => {
             src={myimg}
             alt="Kumar Aman Sagar"
             fill
+            loading="lazy"
             className="rounded-full shadow-4xl transform transition-transform duration-500 hover:scale-105"
           />
         </div>

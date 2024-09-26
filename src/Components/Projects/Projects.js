@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-
+import Image from "next/image"
 const Projects = () => {
   const projects = [
     {
@@ -48,6 +48,7 @@ const Projects = () => {
             description={project.description}
             link={project.link}
             image={project.image}
+            
           />
         ))}
       </div>
@@ -69,10 +70,14 @@ const ProjectCard = ({ title, description, link, image }) => {
           {/* Image section */}
           {image && (
             <div className="h-40 md:h-56 lg:h-64 overflow-hidden rounded-t-2xl">
-              <img
+              <Image
                 src={image}
                 alt={title}
                 className="w-full h-full object-cover p-4"
+                      loading="lazy"
+                  
+                      width={100}
+                      height={100}
               />
             </div>
           )}
